@@ -1,0 +1,50 @@
+#animations-01 {
+  .square {
+    width: 50px;
+    padding: 50px;
+    aspect-ratio: 1/1;
+    background-color: red;
+    // animation-name: rotation 5s linear infinite;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+#animations-02 {
+  .square {
+    position: relative;
+    width: 50px;
+    padding: 50px;
+    aspect-ratio: 1/1;
+    background-color: rgb(165, 115, 39);
+    // animation-name: rotation 5s linear infinite;
+    animation-name: path;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes path {
+    from {
+      left: 0px;
+      background-color: rgb(165, 115, 39);
+    }
+
+    to {
+      left: 100px;
+      background-color: rgb(85, 62, 27);
+    }
+  }
+}

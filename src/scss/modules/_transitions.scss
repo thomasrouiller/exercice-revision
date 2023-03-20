@@ -30,3 +30,28 @@
     transform: rotate(-90deg);
   }
 }
+
+#transitions-03 {
+  div {
+    z-index: 1;
+    position: relative;
+  }
+
+  span {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background-color: red;
+    width: 80px;
+    height: 2px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+  }
+
+  div:hover {
+    span {
+      height: 100%;
+    }
+  }
+}
