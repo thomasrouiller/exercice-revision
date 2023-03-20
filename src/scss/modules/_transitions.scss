@@ -1,0 +1,32 @@
+#transitions-01 {
+  .button {
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    background-color: red;
+    color: green;
+    transition-property: background-color, color;
+    transition-duration: 1s;
+  }
+
+  .button:hover {
+    background-color: rgb(156, 127, 45);
+    color: blue;
+  }
+}
+
+#transitions-02 {
+  .button {
+    width: 120px;
+    text-align: center;
+    padding: 20px;
+    background-color: red;
+    color: green;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+  }
+  .button:hover {
+    transform: rotate(-90deg);
+  }
+}
