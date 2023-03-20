@@ -1,0 +1,45 @@
+.green-square {
+  background-color: rgb(39, 145, 105);
+  width: 90px;
+  border: 1px solid;
+  padding: 30px 20px;
+}
+
+.ocre-square {
+  background-color: rgb(212, 194, 100);
+  width: 0px;
+  border: 1px solid;
+  padding: 5px 15px;
+}
+
+.center {
+  text-align: center;
+}
+
+#positions-01 {
+  .box {
+    position: relative;
+  }
+  .box-b {
+    top: -20px;
+    left: 50px;
+  }
+}
+
+#positions-02 {
+  #father {
+    position: relative;
+  }
+
+  #son1 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  #son2 {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+  }
+}
