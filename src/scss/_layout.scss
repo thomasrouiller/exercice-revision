@@ -1,0 +1,23 @@
+.l-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.l-row {
+  display: flex;
+  gap: 30px;
+}
+
+.l-col-6 {
+  width: 50%;
+}
+
+.l-exercice {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: solid 1px #ccc;
+}
+
+.l-col-6:last-child .l-exercice {
+  padding: 0;
+}
