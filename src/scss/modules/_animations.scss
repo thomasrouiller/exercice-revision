@@ -31,20 +31,40 @@
     background-color: rgb(165, 115, 39);
     // animation-name: rotation 5s linear infinite;
     animation-name: path;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
 
   @keyframes path {
-    from {
+    0% {
+      top: 0px;
       left: 0px;
       background-color: rgb(165, 115, 39);
     }
 
-    to {
-      left: 100px;
+    25% {
+      top: 0px;
+      left: 350px;
       background-color: rgb(85, 62, 27);
+    }
+
+    50% {
+      top: 0px;
+      left: 0%;
+      background-color: brown;
+    }
+
+    75% {
+      background-color: orange;
+      top: 100px;
+      left: 0%;
+    }
+
+    100% {
+      background-color: rgb(165, 115, 39);
+      top: 0px;
+      left: 0%;
     }
   }
 }
